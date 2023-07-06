@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $(".btn1").click(function(){
+                $(".p1").toggle();
+            });
+        });
+
+        $(document).ready(function(){
+             $("#btn2").click(function(){
+              $("#div4").fadeTo();
+             $("#div5").fadeTo("slow",0.15);
+             $("#div6").fadeTo("slow",0.3);
+             });
+
+            $(document).ready(function(){
+            $("#title").click(function(){
+                $("#box").slideToggle("slow");
+            });
+            });
+
+            $(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({top: '550px'});
+  });
+});
+});
+    </script>
+</head>
+<body>
+    <!--hide/show effects-->
+    <button class="btn1">Hide/show paragraph</button>
+    <p class="p1">This is a first paragraph.</p>
+    <p class="p1">This is a second paragraph.</p>
+
+    <br><br><br>
+    <!--Fade In/ Fade Out-->
+    <button id="btn1">FadeToggle</button><br><br>
+
+<div id="div1" style="width:50px;height:50px;background-color:violet;"></div>
+<br>
+<div id="div2" style="width:50px;height:50px;background-color:gold;"></div>
+<br>
+<div id="div3" style="width:50px;height:50px;background-color:blueviolet;"></div>
+
+<br><br><br>
+    <!--Fadeto effects-->
+
+    <button id="btn2">FadeTo</button><br><br>
+
+    <div id="div4" style="width:50px;height:50px;background-color: red;"></div>
+    <br>
+    <div id="div5" style="width:50px;height:50px;background-color:blue;"></div>
+    <br>
+    <div id="div6" style="width:50px;height:50px;background-color:yellowgreen;"></div>
+    <br><br><br>
+    <!--Slide Toggle-->
+    <div id="title" style="background-color: blueviolet; text-align: center;">SlideToggle</div><br>
+<div id="box" style="background-color: blueviolet; text-align: center;">Hello tnxt!</div>
+<br><br><br>
+
+    <!--animate-->
+    <button>Start Animation</button>
+    <br><br>
+    <div style="background:#222222;height:50px;width:50px;position:absolute;"></div>
+
+    <br><br><br>
+</body>
+</html>
